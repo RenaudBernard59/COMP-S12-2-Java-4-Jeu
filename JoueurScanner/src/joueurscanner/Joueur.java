@@ -18,19 +18,25 @@ public class Joueur {
     private String Nom;
     private String Prenom;
     private int Age;
-    public String Pseudo;
-    public String Mdp;
-    public enum Genre {M, F};
+    private String Pseudo;
+    private String Mdp;
+    private enum Genre {M, F};
+    private Genre Genre;
     
-    //Constructeur
-    public Joueur(String Nom, String Prenom, int Age) {
+    //Constructeur//Constructeur
+
+    public Joueur(String Nom, String Prenom, int Age, String Pseudo, String Mdp, Genre Genre) {
         this.Nom = Nom;
         this.Prenom = Prenom;
         this.Age = Age;
+        this.Pseudo = Pseudo;
+        this.Mdp = Mdp;
+        this.Genre = Genre;
     }
-    
-    
+  
+
     //Getter & Setter
+
     public String getNom() {
         return Nom;
     }
@@ -54,6 +60,31 @@ public class Joueur {
     public void setAge(int Age) {
         this.Age = Age;
     }
+
+    public String getPseudo() {
+        return Pseudo;
+    }
+
+    public void setPseudo(String Pseudo) {
+        this.Pseudo = Pseudo;
+    }
+
+    public String getMdp() {
+        return Mdp;
+    }
+
+    public void setMdp(String Mdp) {
+        this.Mdp = Mdp;
+    }
+
+    public Genre getGenre() {
+        return Genre;
+    }
+
+    public void setGenre(Genre Genre) {
+        this.Genre = Genre;
+    }
+    
     
     
 }
