@@ -20,18 +20,18 @@ public class Joueur {
     private int Age;
     private String Pseudo;
     private String Mdp;
-    private enum Genre {M, F};
+    private enum Genre {H, F};
     private Genre Genre;
     
     //Constructeur//Constructeur
 
-    public Joueur(String Nom, String Prenom, int Age, String Pseudo, String Mdp, Genre Genre) {
-        this.Nom = Nom;
-        this.Prenom = Prenom;
-        this.Age = Age;
-        this.Pseudo = Pseudo;
-        this.Mdp = Mdp;
-        this.Genre = Genre;
+    public Joueur() {
+        Nom="";
+        Prenom="";
+        Age=0;
+        Pseudo="";
+        Mdp="";
+        Genre=H;
     }
   
 

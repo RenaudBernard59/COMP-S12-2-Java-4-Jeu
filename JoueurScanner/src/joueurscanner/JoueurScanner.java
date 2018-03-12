@@ -6,7 +6,9 @@
 package joueurscanner;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator;
 
 /**
  *
@@ -19,23 +21,23 @@ public class JoueurScanner {
      */
     public static void main(String[] args) {
         //Messages
-//       String promptNbJoueurs = "Indiquez un nombre de joueurs : ";
-//       String promptNomJoueur = "Indiquez le Nom du joueur : ";
-//       String promptPrenomJoueur = "Indiquez le Prenom du joueur : ";
-//       String promptAgebJoueur  = "Indiquez l'Age du joueur : ";
-//       String promptPseudoJoueur  = "Indiquez le Pseudo du joueur : ";
-//       String promptMdpJoueur  = "Indiquez le Mot de Passe du joueur : ";
-//       String promptGenreJoueur  = "Indiquez le Genre du joueur (H - F) : ";
+       String promptNbJoueurs = "Indiquez un nombre de joueurs : ";
+       String promptNomJoueur = "Indiquez le Nom du joueur : ";
+       String promptPrenomJoueur = "Indiquez le Prenom du joueur : ";
+       String promptAgebJoueur  = "Indiquez l'Age du joueur : ";
+       String promptPseudoJoueur  = "Indiquez le Pseudo du joueur : ";
+       String promptMdpJoueur  = "Indiquez le Mot de Passe du joueur : ";
+       String promptGenreJoueur  = "Indiquez le Genre du joueur (H - F) : ";
 //       
-//       //enum Genre {M, F};
+//       enum Genre {M, F};
 //       int pNbJoueurs;
 //       String pNom;
 //       String pPrenom;
 //       int pAge;
 //       String pPseudo;
 //       String pMdp;
-       //Genre pGenre;
-       Scanner sc = new Scanner(System.in);
+//       Genre pGenre;
+       
 
        
        //Listes      
@@ -73,18 +75,42 @@ public class JoueurScanner {
 //       System.out.println(pMdp);
 //       
 //       System.out.println(promptGenreJoueur);
-//       //pGenre = sc.next();
-//       /////////////////////
+       //pGenre = sc.next();
+       /////////////////////
+
+       Scanner sc = new Scanner(System.in);
        String valeur = "";
-       System.out.println("Saisir un nombre : ");
-       while (!sc.hasNextInt()) {
-           System.out.println("Saisir un nombre : ");
-           valeur = sc.next();
-       }
-       valeur = sc.next();
-      int nbJoueurs = Integer.parseInt(valeur);
+       int nbJoueurs = 0;
+       List<Joueur> ListeJoueurs = new ArrayList<Joueur>();
+       //Nb de foi OK
+       while (ListeJoueurs.size()<= nbJoueurs) {
+           ListeJoueurs.add(new Joueur());
+           
+            String temp;
+            Joueur oJ = new Joueur();
+            System.out.println(promptNomJoueur);
+            oJ.setPrenom(temp);
+            
+            System.out.println(promptPrenomJoueur);
+            oJ.setNom(temp);
+            
+            System.out.println(promptAgebJoueur);
+            oJ.setAge(temp);
+            
+            System.out.println(promptPseudoJoueur);
+            oJ.setPseudo(temp);
+            
+            System.out.println(promptMdpJoueur);
+            oJ.setMdp(temp);
+            
+            System.out.println(promptGenreJoueur);
+            oJ.setGenre(temp);
+
+       }/////////////////////
+       
+       
+
       
-      /////////////////////
       
       
       
