@@ -104,14 +104,23 @@ public class JoueurScanner {
             oJ.setMdp(temp);
             
             System.out.println(promptGenreJoueur);
-            oJ.setGenre(temp);
-
+            if(temp.equalsIgnoreCase("M")) {
+                oJ.setGenre(Genre M);
+            } else {
+                if(temp.equalsIgnoreCase("F")) {
+                    oJ.setGenre(Genre F);
+                }
+            }
+            
+            
        }/////////////////////
        
        
 
       
       
+       
+       
       
       
       
