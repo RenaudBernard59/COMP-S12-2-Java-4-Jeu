@@ -6,7 +6,7 @@ Créer une classe Joueur
 * Age : Integer ;
 * Pseudo : String ;
 * Mdp : String ;
-* Genre : String.
+* Genre : String || Enum
 
 ## 2
 1. Demander le Nombre de Joueurs
