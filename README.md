@@ -1,9 +1,9 @@
 # COMP-S12-2-Java-4-Jeu
 ## 1
 Créer une classe Joueur
-* Nom : String + Constructeur ;
-* Prenom : String + Getteur/Setteurs ;
-* Age : Integer ;
+* Nom : String + Constructeur + Getteur/Setteurs;
+* Prenom : String + Constructeur + Getteur/Setteurs ;
+* Age : Integer + Constructeur + Getteur/Setteurs;
 * Pseudo : String ;
 * Mdp : String ;
 * Genre : String || Enum
