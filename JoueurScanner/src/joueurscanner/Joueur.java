@@ -11,7 +11,7 @@ package joueurscanner;
  */
 
 
-    
+ 
 
 public class Joueur {
     //Variables
@@ -20,7 +20,7 @@ public class Joueur {
     private int Age;
     private String Pseudo;
     private String Mdp;
-    private enum Genre {H, F};
+  
     private Genre Genre;
     
     //Constructeur//Constructeur
@@ -31,7 +31,7 @@ public class Joueur {
         Age=0;
         Pseudo="";
         Mdp="";
-        Genre=H;
+        Genre=Genre.H;
     }
   
 

@@ -105,12 +105,15 @@ public class JoueurScanner {
             
             System.out.println(promptGenreJoueur);
             if(temp.equalsIgnoreCase("M")) {
-                oJ.setGenre(Genre M);
-            } else {
-                if(temp.equalsIgnoreCase("F")) {
-                    oJ.setGenre(Genre F);
-                }
+                oJ.setGenre(Genre.H);
+            } else if(temp.equalsIgnoreCase("F")) {
+                oJ.setGenre(Genre.F);
             }
+            else
+            {
+                //exception genre invalide
+            }
+            
             
             
        }/////////////////////
