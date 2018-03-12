@@ -19,29 +19,29 @@ public class JoueurScanner {
      */
     public static void main(String[] args) {
         //Messages
-       String promptNbJoueurs = "Indiquez un nombre de joueurs : ";
-       String promptNomJoueur = "Indiquez le Nom du joueur : ";
-       String promptPrenomJoueur = "Indiquez le Prenom du joueur : ";
-       String promptAgebJoueur  = "Indiquez l'Age du joueur : ";
-       String promptPseudoJoueur  = "Indiquez le Pseudo du joueur : ";
-       String promptMdpJoueur  = "Indiquez le Mot de Passe du joueur : ";
-       String promptGenreJoueur  = "Indiquez le Genre du joueur (H - F) : ";
-       
-       //enum Genre {M, F};
-       int pNbJoueurs;
-       String pNom;
-       String pPrenom;
-       int pAge;
-       String pPseudo;
-       String pMdp;
+//       String promptNbJoueurs = "Indiquez un nombre de joueurs : ";
+//       String promptNomJoueur = "Indiquez le Nom du joueur : ";
+//       String promptPrenomJoueur = "Indiquez le Prenom du joueur : ";
+//       String promptAgebJoueur  = "Indiquez l'Age du joueur : ";
+//       String promptPseudoJoueur  = "Indiquez le Pseudo du joueur : ";
+//       String promptMdpJoueur  = "Indiquez le Mot de Passe du joueur : ";
+//       String promptGenreJoueur  = "Indiquez le Genre du joueur (H - F) : ";
+//       
+//       //enum Genre {M, F};
+//       int pNbJoueurs;
+//       String pNom;
+//       String pPrenom;
+//       int pAge;
+//       String pPseudo;
+//       String pMdp;
        //Genre pGenre;
        Scanner sc = new Scanner(System.in);
 
        
        //Listes      
-       ArrayList listeDesJoueurs = new ArrayList();
-       ArrayList UnJoueur = new ArrayList();
-       
+//       ArrayList listeDesJoueurs = new ArrayList();
+//       ArrayList UnJoueur = new ArrayList();
+//       
 //       //Test Scanner
 //       System.out.println(promptNbJoueurs);
 //       pNbJoueurs = sc.nextInt();
@@ -76,10 +76,12 @@ public class JoueurScanner {
 //       //pGenre = sc.next();
 //       /////////////////////
        String valeur = "";
+       System.out.println("Saisir un nombre : ");
        while (!sc.hasNextInt()) {
            System.out.println("Saisir un nombre : ");
            valeur = sc.next();
        }
+       valeur = sc.next();
       int nbJoueurs = Integer.parseInt(valeur);
       
       /////////////////////
