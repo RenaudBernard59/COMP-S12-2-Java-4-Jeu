@@ -42,38 +42,53 @@ public class JoueurScanner {
        ArrayList listeDesJoueurs = new ArrayList();
        ArrayList UnJoueur = new ArrayList();
        
-       //Test Scanner
-       System.out.println(promptNbJoueurs);
-       pNbJoueurs = sc.nextInt();
-       System.out.println(pNbJoueurs);
-       
-       System.out.println(promptNomJoueur);
-       pNom = sc.next();
-       System.out.println(pNom);
-       
-       System.out.println(promptPrenomJoueur);
-       pPrenom = sc.next();
-       System.out.println(pPrenom);
-       
-       System.out.println(promptAgebJoueur);
-       pAge = sc.nextInt();
-       System.out.println(pAge);
-       
-       System.out.println(promptPseudoJoueur);
-       pPseudo = sc.next();
-       System.out.println(pPseudo);
-       
-       System.out.println(promptMdpJoueur);
-       pMdp = sc.next();
-       System.out.println(pMdp);
-       
-       System.out.println(promptGenreJoueur);
-       //pGenre = sc.next();
-       /////////////////////
-       
-       
-       
-       
-        
+//       //Test Scanner
+//       System.out.println(promptNbJoueurs);
+//       pNbJoueurs = sc.nextInt();
+//       System.out.println(pNbJoueurs);
+//       
+//        for (int i = 0;i >= pNbJoueurs; i++) {
+//           System.out.println("Joueur"+i);
+//        }
+//       
+//       
+//       System.out.println(promptNomJoueur);
+//       pNom = sc.next();
+//       System.out.println(pNom);
+//       
+//       System.out.println(promptPrenomJoueur);
+//       pPrenom = sc.next();
+//       System.out.println(pPrenom);
+//       
+//       System.out.println(promptAgebJoueur);
+//       pAge = sc.nextInt();
+//       System.out.println(pAge);
+//       
+//       System.out.println(promptPseudoJoueur);
+//       pPseudo = sc.next();
+//       System.out.println(pPseudo);
+//       
+//       System.out.println(promptMdpJoueur);
+//       pMdp = sc.next();
+//       System.out.println(pMdp);
+//       
+//       System.out.println(promptGenreJoueur);
+//       //pGenre = sc.next();
+//       /////////////////////
+       String valeur = "";
+       while (!sc.hasNextInt()) {
+           System.out.println("Saisir un nombre : ");
+           valeur = sc.next();
+       }
+      int nbJoueurs = Integer.parseInt(valeur);
+      
+      /////////////////////
+      
+      
+      
+      
+      
+      
     }
+        
 }
