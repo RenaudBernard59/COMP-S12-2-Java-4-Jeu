@@ -3,39 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package joueurscanner;
+package maxencejava;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
-
-
- 
-
 public class Joueur {
-    //Variables
-    private String Nom;
-    private String Prenom;
-    private int Age;
-    private String Pseudo;
-    private String Mdp;
-  
-    private Genre Genre;
-    
-    //Constructeur//Constructeur
-
-    public Joueur() {
-        Nom="";
-        Prenom="";
-        Age=0;
-        Pseudo="";
-        Mdp="";
-        Genre=Genre.H;
-    }
-  
-
-    //Getter & Setter
+        private String Nom;
+        private String Prenom;
+        private int Age;
+        private String Pseudo;
+        private String Mdp;
+        private Genre genre;
+      /**
+       * <b>Toutes les données des attributs sont initialisées.</b>
+       */
+      public Joueur(){
+          this.Age = 0;
+          this.Mdp = "";
+          this.Nom = "";
+          this.Prenom = "";
+          this.Pseudo = "";
+          this.genre = Genre.M;
+      }
 
     public String getNom() {
         return Nom;
@@ -78,11 +69,11 @@ public class Joueur {
     }
 
     public Genre getGenre() {
-        return Genre;
+        return genre;
     }
 
-    public void setGenre(Genre Genre) {
-        this.Genre = Genre;
+    public void setGenre(Genre genre) {
+        this.genre = genre;
     }
     
     
