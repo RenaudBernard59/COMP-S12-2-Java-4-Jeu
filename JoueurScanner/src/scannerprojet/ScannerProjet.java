@@ -6,11 +6,10 @@
 package scannerprojet;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.xml.bind.annotation.XmlElement;
+
 
 /**
  *
@@ -53,9 +52,9 @@ public class ScannerProjet {
             scRead = sc.next();
             System.out.println();
 
-            int test = scRead.compareTo("q");
+           // int test = scRead.compareTo("q");
             try {
-                if(scRead.compareTo("q") == 0 || scRead.compareTo("Q") == 0 )
+                if(scRead.equalsIgnoreCase("q"))
                 {
                     System.out.println("Exit Programme");
                     isDoContinu = false;
@@ -74,6 +73,7 @@ public class ScannerProjet {
                         AjouterJoueur();
                         break;
                     default:
+                        System.out.println("Vous avez saisie un choix invalide !");
                         break;
                         //throw new MenuExeption();
 
@@ -184,6 +184,7 @@ public class ScannerProjet {
                     
                     System.out.print("Mot de passe :");
                     champS = kyeScanString();
+                    tentative--;
                 }
                 if(tentative == 0) throw new Exception("Le Mot de passe doit être superieur à 2 charactéres !");
             } while (!matcher.matches() );
