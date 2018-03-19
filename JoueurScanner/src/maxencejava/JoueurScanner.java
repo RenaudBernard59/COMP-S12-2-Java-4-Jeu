@@ -28,12 +28,12 @@ public class JoueurScanner {
      */
     public static void main(String[] args) {
          
-       try {
-           
+          
            //int nbJoueurs =0;
            int typejoueur = 0;
            String valeur= "";
-           
+           try {
+        
            List <Joueur> ListeJoueurs = new ArrayList <Joueur> (); 
            
            do
